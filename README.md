@@ -4,7 +4,8 @@ L33T In gaming, a term to describe one with a great deal of skill, or to describ
 
 Following are some of the problems which L33T Coin addresses:
 
-1. Lack of recognition and adaptation of blockchain and digital payments.  
+1. Lack of earning real coin for gaming.
+2. Earn staking on coins you earned by gaming (not tokens you can only use in a game) trade L33T on an exchange.
 2. Lack of Trust in cryptocurrency world. 
 3. Centralization threat from ASIC and FPGA companies.
 4. Quantum Attack threat from future Quantum Computers.
@@ -117,7 +118,7 @@ Pool mining example :
 
 @echo off
 :start
-t-rex -a x16r -o stratum+tcp://rvn.suprnova.cc:6667 -u PoolLogin.worker -p x -i 21
+t-rex -a x16r -o stratum+tcp://L33T.suprnova.cc:6667 -u PoolLogin.worker -p x -i 21
 goto start
 ---------------------------------------------------------------------------------------
 Sample OC settings: PL 65, Core +100, memory + 300 (for all nvidia cards)
