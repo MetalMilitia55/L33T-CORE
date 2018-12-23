@@ -1,18 +1,17 @@
-SUQA is a new opensource peer to peer digital currency that gives the investors 5% apr interest from term deposits even if the wallet is offline. It is based on an improved code of the secure and widely used Bitcoin Blockchain with a brand new advanced memory intensive X22i POW algo which is completely ASIC, FPGA and Quantum Resistant.
+L33T is a new opensource peer to peer digital currency that gives the investors 5% apr interest from term deposits even if the wallet is offline. It is based on an improved code of the secure and widely used Bitcoin Blockchain with a brand new advanced memory intensive X22i POW algo which is completely ASIC, FPGA and Quantum Resistant.
 
-SUQA is a name of an ancient coin from Nepal that has been used for thousands of years and it also means 'to wait'(Time-Lock) in Somali language.
+L33T In gaming, a term to describe one with a great deal of skill, or to describe incredibly advanced technology. One who is l33t is the opposite of being a noob. L33tness is relative but usually comes with experience and skill (or upgraded hardware for better gaming speed and performance).
 
-Following are some of the problems which SUQA currency addresses:
+Following are some of the problems which L33T Coin addresses:
 
-1. Lack of recognition and adaptation of blockchain and digital payments. 
-2. Lack of coins which are being used in real life ecosystems. 
-3. Lack of Trust in cryptocurrency world. 
-4. Centralization threat from ASIC and FPGA companies.
-5. Quantum Attack threat from future Quantum Computers.
-6. Need for a new complex, secure, ASIC and FPGA resistant, memory optimized, post quantum algorithm for constant dynamic decentralization.
+1. Lack of recognition and adaptation of blockchain and digital payments.  
+2. Lack of Trust in cryptocurrency world. 
+3. Centralization threat from ASIC and FPGA companies.
+4. Quantum Attack threat from future Quantum Computers.
+5. Need for a new complex, secure, ASIC and FPGA resistant, memory optimized, post quantum algorithm for constant dynamic decentralization.
 
 
-SUQA Features:
+L33T Features:
 
 1. Fast:
 Fastest POW Coin: 533 Transactions per second. 75 times more scalable than Bitcoin.
@@ -21,35 +20,35 @@ Fastest POW Coin: 533 Transactions per second. 75 times more scalable than Bitco
 Investors can earn 5% apr interest from term deposits even if the wallet is offline. First 3 months monthly term deposit apr will be 25% apr to encourage early adopters and investors.  
 
 3. Almost No Transaction Fees
-SUQA allows you to make instant payments with incredibly low fees for each transaction. Using blockchain technology, transactions are performed directly between two digital wallets.
+L33T allows you to make instant payments with incredibly low fees for each transaction. Using blockchain technology, transactions are performed directly between two digital wallets.
 
 4. Protection
-To ensure the safety of the SUQA ecosystem, SUQA has implemented full replay protection and unique wallet addresses. More importantly ASIC, FPGA and Quantum Attack protection make SUQA a very secure and future-proof digital currency. 
+To ensure the safety of the L33T ecosystem, L33T has implemented full replay protection and unique wallet addresses. More importantly ASIC, FPGA and Quantum Attack protection make L33T a very secure and future-proof digital currency. 
  
 5. Transparency
-SUQA is a free open source project that is built by expert blockchain developers and supported by a rapidly growing community of blockchain enthusiasts that stretches around the globe. 
+L33T is a free open source project that is built by expert blockchain developers and supported by a rapidly growing community of blockchain enthusiasts that stretches around the globe. 
 
-SUQA Use Cases:
+L33T Use Cases:
 
-SUQA currency can be used in any digital transaction where other cryptocurrencies like Bitcoin is being used. The major use of SUQA currency in a real world ecosystem is SUQA Foundation where no other cryptocurrency except SUQA can be used. 
+L33T currency can be used in any digital transaction where other cryptocurrencies like Bitcoin is being used. The major use of L33T currency in a real world ecosystem is L33T Foundation where no other cryptocurrency except L33T can be used. 
 
-Suqa Foundation is a Decentralized Autonomous Philanthropist Organization that rewards everyone inside its ecosystem generously, securely and transparently without fees, to foster the growth of the Blockchain.
+L33T Foundation is a Decentralized Autonomous Philanthropist Organization that rewards everyone inside its ecosystem generously, securely and transparently without fees, to foster the growth of the Blockchain.
 
-There will be 3 microsites of SUQA Foundation Platform where the SUQA currency can be utilized. The platform will consist of Cryptolancers(anyone related to crypto), Blockchain Startup Companies and Charities.
+There will be 3 microsites of L33T Foundation Platform where the L33T currency can be utilized. The platform will consist of Cryptolancers(anyone related to crypto), Blockchain Startup Companies and Charities.
 
 Specifications
 
-Coin name: SUQA
-Ticker : SUQA
+Coin name: L33T
+Ticker : L33T
 Algorithm : X22i
 Coin Type: POW
-Max. supply: 1,078,740,313+10%dev fee
+Max. supply: 88,000,000+10%dev fee
 Block Time: 2 minutes
 Max Block Size: 16mb
 Max tx/s: 533 tx/s
 Difficulty Retarget Algo: DarkGravityV3
-RPC port: 20971
-P2P port: 20970
+RPC port: 56374
+P2P port: 57374
 Ico: No
 Pre-Mine: No
 Masternode: No
@@ -65,10 +64,10 @@ Block rewards
 100,001 to 200,000: 1.250 = 124,998,750
 200,001 to  400.000: 625= 124,999,375
 400,001 to 1,500,000: 312,5=343,749,688
-TOTAL SUPPLY: 1,078,740,313  plus 9.09%
+TOTAL SUPPLY: 88,000,000  plus 9.09%
 for founders fee will be mined in 5.78 years.
 
-MAX TOTAL : 1,186,614,344 SUQA
+MAX TOTAL : 88,000,000 L33T
 
 Technical Details:
 
@@ -82,15 +81,11 @@ New PoW algorithm providing the following advantages:
 
 Time-Lock Deposit
 Please go to file, receiving adress and copy the wallet address from there.
-Please choose deposit from the top and paste the adress to where it says deposit adress. Please choose the amount and click on how long  you want to time-lock your SUQA for, choose for up to 4 weeks and up to 25% apr for the first 3 months for early adapters.After 3 months 1 month time-locked term deposit will be 5% apr.
+Please choose deposit from the top and paste the adress to where it says deposit adress. Please choose the amount and click on how long  you want to time-lock your L33T for, choose for up to 4 weeks and up to 25% apr for the first 3 months for early adapters.After 3 months 1 month time-locked term deposit will be 5% apr.
 Click on EARN. Click on YES and YES. You should see on  the amount you put on hold and how much you will receive on the overview screen. Once it is time-locked it will not be possible to unlock it until the chosen time.
 
 Documentation
-WhitePaper (EN): https://suqa.org/file/2018/10/suqa-whitepaper.pdf
-WhitePaper (RU): https://suqa.org/file/2018/10/suqa-whitepaper-ru.pdf
-WhitePaper (TR): https://suqa.org/file/2018/10/suqa-whitepaper-tr.pdf
-OnePager: https://suqa.org/file/2018/10/suqa-onepager.pdf
-X22i Algoritm: https://suqa.org/file/2018/10/x22i-proof-of-work-algorithm.pdf
+
 
 GitHub
 https://github.com/SUQAORG
@@ -111,7 +106,6 @@ V1.0 Windows 10-64 bit, Nvidia Cuda 9.2 ccminer x22i specific miner.
 
 https://github.com/SUQAORG/ccminer-x22i/releases/tag/v1.0.0
 
-SUQA Mac Wallet is released. https://github.com/SUQAORG/SUQA-CORE/releases
 
 https://coinguides.org/solo-mining-guide/
 
