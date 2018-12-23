@@ -88,14 +88,14 @@ Documentation
 
 
 GitHub
-https://github.com/SUQAORG
+EAMPLE     (https://github.com/SUQAORG-----------------------------------chagne once finished)
 
 Wallets
 Windows-Qt 
-https://github.com/SUQAORG/SUQA-CORE/releases/tag/v1.0
+EXAMPLE    (https://github.com/SUQAORG/SUQA-CORE/releases/tag/v1.0-------chagne once finished)
 
 Linux
-https://github.com/SUQAORG/SUQA-CORE/releases/tag/v1.0
+EAMPLE:    (https://github.com/SUQAORG/SUQA-CORE/releases/tag/v1.0_------change once finished)
 configure command to help people having problems compiling the wallet on linux:
 "./configure --disable-tests --with-incompatible-bdb --disable-shared --with-pic --with-bignum=no --with-gui=qt5 --disable-hardening CPPFLAGS=-fPIC"
 
@@ -104,7 +104,7 @@ Miner
 
 V1.0 Windows 10-64 bit, Nvidia Cuda 9.2 ccminer x22i specific miner.
 
-https://github.com/SUQAORG/ccminer-x22i/releases/tag/v1.0.0
+https://github.com/MetalMilitia55/L33T-CORE
 
 
 https://coinguides.org/solo-mining-guide/
@@ -112,11 +112,14 @@ https://coinguides.org/solo-mining-guide/
 Solo mining example:
 
 ccminer -a x22i -s 5 --no-longpoll --coinbase-addr=<your_receiving_address> -o http://localhost:20971/ -u <your_wallet_rpc_username> -p <your_wallet_rpc_password>
-
+--------------------------------------------------------------------------------------
 Pool mining example :
 
-ccminer -a x22i -o stratum+tcp://preferredpool:port-u Weblogin.WorkerName -p WorkerPassword
-
+@echo off
+:start
+t-rex -a x16r -o stratum+tcp://rvn.suprnova.cc:6667 -u PoolLogin.worker -p x -i 21
+goto start
+---------------------------------------------------------------------------------------
 Sample OC settings: PL 65, Core +100, memory + 300 (for all nvidia cards)
 
 Memory clock matters, play with it!
@@ -125,7 +128,7 @@ If you get errors when starting the miner, set the wallet language to english
 
 Pools
 
-Pool List Page: https://suqa.org/suqa-pools/
+Pool List Page: Coming Soon!! Below are speculative
 
 https://labs.f2pool.com/labs    Fee 3%
 
@@ -179,35 +182,14 @@ https://www.focus-pool.com   Fee 0.3%
 https://mecrypto.club            No Fee
 
 SUQA Calculator
-https://www.coincalculators.io/coin.aspx?crypto=suqa-mining-calculator
-https://whattomine.com/coins/277-suqa-x22i
+https://www.coincalculators.io - Coming soon
+https://whattomine.com/coins/ -Coming soon
 
 Explorer
-http://suqaexplorer.com/
 https://altmix.org/coins/114-SUQA
 https://poolexplorer.com/coin/5401
 https://miningpoolstats.stream/suqa
 
 Find Us
-https://suqa.org
-Exchanges: https://suqa.org/suqa-exchanges/
-https://coinmarketcap.com/currencies/suqa
-https://www.coingecko.com/en/coins/suqa
-https://coincheckup.com/coins/suqa
-Telegram: https://t.me//Suqafoundation
-Telegram Rus: https://t.me/SUQA_Russian
-Telegram Chinese: https://t.me/suqachina
-Telegram Africa: https://t.me/Suqaafrica 
-Telegram Indonesia: https://t.me/suqaindonesia
-Telegram Italy: https://t.me/suqaitalianchat
-Telegram Turkish: https://t.me/SuqaTR
-Telegram Vietnamese:  https://t.me/suqavietnamese
-Discord: https://discord.gg/qrtU7Y9
-Twitter: https://twitter.com/SUQAfoundation
-Facebook: https://www.facebook.com/SUQAFoundation
-Youtube: https://www.youtube.com/channel/UCdqVQvJu8yhmXUYXOcaEThg?view_as=subscriber 
-https://www.reddit.com/r/suqa/
-https://www.reddit.com/r/gpumining/comments/9oed9c/new_gpu_algo_x22i_from_the_suqa_coin_project/
-Roadmap: https://suqa.org/file/2018/10/suqa-roadmap.pdf
-SUQA Whitepaper: https://suqa.org/file/2018/10/suqa-whitepaper.pdf
+
 X22i Algo Whitepaper: https://suqa.org/file/2018/10/x22i-proof-of-work-algorithm.pdf
