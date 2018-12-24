@@ -1,12 +1,13 @@
-L33T is a new opensource peer to peer digital currency that gives the investors 5% apr interest from term deposits even if the wallet is offline. It is based on an improved code of the secure and widely used Bitcoin Blockchain with a brand new advanced memory intensive X22i POW algo which is completely ASIC, FPGA and Quantum Resistant.
+L33T is a new opensource peer to peer Gaming Coin that gives the investors 5% apr interest from term deposits even if the wallet is offline. It is based on an improved code of the secure and widely used Bitcoin Blockchain with a brand new advanced memory intensive X22i POW algo which is completely ASIC, FPGA and Quantum Resistant.
 
-L33T In gaming, a term to describe one with a great deal of skill, or to describe incredibly advanced technology. One who is l33t is the opposite of being a noob. L33tness is relative but usually comes with experience and skill (or upgraded hardware for better gaming speed and performance).
+Meaning of "L33T"
+The term L33T In gaming a term to describe one with a great deal of skill, or to describe incredibly advanced technology. One who is l33t is the opposite of being a noob. L33tness is relative but usually comes with experience and skill (or upgraded hardware for better gaming speed and performance).
 
 Following are some of the problems which L33T Coin addresses:
 
-1. Lack of earning real coin for gaming.
+1. Lack of earning real coin for gaming, the gamer is in control here.
 2. Earn staking on coins you earned by gaming (not tokens you can only use in a game) trade L33T on an exchange.
-2. Lack of Trust in cryptocurrency world. 
+2. Lack of Trust in cryptocurrency world.
 3. Centralization threat from ASIC and FPGA companies.
 4. Quantum Attack threat from future Quantum Computers.
 5. Need for a new complex, secure, ASIC and FPGA resistant, memory optimized, post quantum algorithm for constant dynamic decentralization.
@@ -24,18 +25,17 @@ Investors can earn 5% apr interest from term deposits even if the wallet is offl
 L33T allows you to make instant payments with incredibly low fees for each transaction. Using blockchain technology, transactions are performed directly between two digital wallets.
 
 4. Protection
-To ensure the safety of the L33T ecosystem, L33T has implemented full replay protection and unique wallet addresses. More importantly ASIC, FPGA and Quantum Attack protection make L33T a very secure and future-proof digital currency. 
+To ensure the safety of the L33T ecosystem, L33T has implemented full replay protection and unique wallet addresses. More importantly ASIC, FPGA and Quantum Attack protection make L33T a very secure and future-proof Gaming Coin. 
  
 5. Transparency
 L33T is a free open source project that is built by expert blockchain developers and supported by a rapidly growing community of blockchain enthusiasts that stretches around the globe. 
 
 L33T Use Cases:
 
-L33T currency can be used in any digital transaction where other cryptocurrencies like Bitcoin is being used. The major use of L33T currency in a real world ecosystem is L33T Foundation where no other cryptocurrency except L33T can be used. 
+L33T Coin can be used in the same way other crypto coins are being used today. The major use of L33T Coin in a real world ecosystem is L33T establishes a portal for gamers to receive tangible rewards. 
 
-L33T Foundation is a Decentralized Autonomous Philanthropist Organization that rewards everyone inside its ecosystem generously, securely and transparently without fees, to foster the growth of the Blockchain.
+L33T Coin is a Decentralized cryptocurrency that rewards everyone inside its ecosystem generously, securely and transparently without fees, to foster the growth of the Blockchain.
 
-There will be 3 microsites of L33T Foundation Platform where the L33T currency can be utilized. The platform will consist of Cryptolancers(anyone related to crypto), Blockchain Startup Companies and Charities.
 
 Specifications
 
