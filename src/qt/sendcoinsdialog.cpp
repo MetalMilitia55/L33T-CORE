@@ -764,7 +764,7 @@ void SendCoinsDialog::coinControlChangeEdited(const QString& text)
         }
         else if (!addr.IsValid()) // Invalid address
         {
-            ui->labelCoinControlChangeLabel->setText(tr("Warning: Invalid SUQA address"));
+            ui->labelCoinControlChangeLabel->setText(tr("Warning: Invalid L33T address"));
         }
         else // Valid address
         {

@@ -228,12 +228,12 @@ CAmount GetInterest(CAmount nValue, int outputBlockHeight, int valuationHeight, 
 
     //Regular deposits can have a maximum of 30 days interest
     //int blocks=std::min(THIRTYDAYS,valuationHeight-outputBlockHeight);
-    int blocks=0;		// regular deposits have no interest on SUQA
+    int blocks=0;		// regular deposits have no interest on L33T
 
-    //Term deposits may have up to 1 year of interest (1 month on SUQA)
+    //Term deposits may have up to 1 year of interest (1 month on L33T)
     if(maturationBlock>0){
         //blocks=std::min(ONEYEAR,valuationHeight-outputBlockHeight);
-        blocks=std::min(THIRTYDAYS,maturationBlock-outputBlockHeight);		// SUQA doesn't use valuation
+        blocks=std::min(THIRTYDAYS,maturationBlock-outputBlockHeight);		// L33T doesn't use valuation
 
         //Bug fix here - if the valuation height is greater than the maturation height, the deposit continues to earn interest after maturation
         //Need the minimum of three figures - one year, valuation height, or maturation period
@@ -281,7 +281,7 @@ CAmount GetInterest(CAmount nValue, int outputBlockHeight, int valuationHeight, 
             termDepositAmount=result.getuint64();
         }
         */
-        // SUQA: no interest on less than 1 days term deposits
+        // L33T: no interest on less than 1 days term deposits
         if(term < BLOCKSPERDAY*1) interestAmount = 0;
     }
 

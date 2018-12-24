@@ -469,7 +469,7 @@ static bool ProcessBlockFound(CBlock* pblock, CWallet& wallet, CReserveKey& rese
     {
         LOCK(cs_main);
         if (pblock->hashPrevBlock != chainActive.Tip()->GetBlockHash())
-            return error("SUQAMiner: generated block is stale");
+            return error("L33TMiner: generated block is stale");
     }
 
     // Remove key from key pool
@@ -484,7 +484,7 @@ static bool ProcessBlockFound(CBlock* pblock, CWallet& wallet, CReserveKey& rese
     // Process this block the same as if we had received it from another node
     CValidationState state;
     if (!ProcessNewBlock(state, NULL, pblock, true, NULL))
-        return error("SUQAMiner: ProcessNewBlock, block not accepted");
+        return error("L33TMiner: ProcessNewBlock, block not accepted");
 
     return true;
 }
@@ -509,7 +509,7 @@ void static BitcoinMiner(CWallet *pwallet, uint32_t minerI, uint32_t minerN, int
 {
 	fGenerate = true;
 	minerStopFlag = 0;
-    LogPrintf("SUQAMiner started\n");
+    LogPrintf("L33TMiner started\n");
     srand(clock());
     string ma=GetArg("-miningaddress", "");
     //std::vector<std::string> arr=split(ma+"",';');
@@ -562,25 +562,25 @@ void static BitcoinMiner(CWallet *pwallet, uint32_t minerI, uint32_t minerN, int
 
             if(ma!=""){
             	if(validateAddress(ma)) {
-                    LogPrintf("SUQAMiner: Mining to User supplied address %s\n",ma);
+                    LogPrintf("L33TMiner: Mining to User supplied address %s\n",ma);
                     pblocktemplate= auto_ptr<CBlockTemplate>(CreateNewBlockWithAddress(ma));
                 }else{
-                    LogPrintf("SUQAMiner: WARNING! User supplied address is invalid, defaulting to keypool address.\n");
+                    LogPrintf("L33TMiner: WARNING! User supplied address is invalid, defaulting to keypool address.\n");
                     pblocktemplate= auto_ptr<CBlockTemplate>(CreateNewBlockWithKey(reservekey));
                 }
             }else{
-                LogPrintf("SUQAMiner: Mining to keypool address.\n");
+                LogPrintf("L33TMiner: Mining to keypool address.\n");
                 pblocktemplate= auto_ptr<CBlockTemplate>(CreateNewBlockWithKey(reservekey));
             }
             if (!pblocktemplate.get())
             {
-                LogPrintf("SUQAMiner: ERROR! Keypool ran out, please call keypoolrefill before restarting the mining thread\n");
+                LogPrintf("L33TMiner: ERROR! Keypool ran out, please call keypoolrefill before restarting the mining thread\n");
                 return;
             }
             CBlock *pblock = &pblocktemplate->block;
             IncrementExtraNonce(pblock, pindexPrev, nExtraNonce);
 
-            LogPrintf("Running SUQAMiner with %u transactions in block (%u bytes)\n", pblock->vtx.size(),
+            LogPrintf("Running L33TMiner with %u transactions in block (%u bytes)\n", pblock->vtx.size(),
                 ::GetSerializeSize(*pblock, SER_NETWORK, PROTOCOL_VERSION));
 
             //
@@ -607,7 +607,7 @@ void static BitcoinMiner(CWallet *pwallet, uint32_t minerI, uint32_t minerN, int
 										/*
                     //totalHashes = totalHashes + collisions;
                     dHashesPerSec = (time(NULL) != startTime ? totalHashes / (time(NULL) - startTime) : 0);
-                    LogPrintf("SUQAMiner: %d/%d\n", minerI, minerN);
+                    LogPrintf("L33TMiner: %d/%d\n", minerI, minerN);
                     LogPrintf("search finished - best hash  \n  hash: %s gethash:%s nonce:%d \ntarget: %s\n", hash.GetHex(), pblock->GetHash().GetHex(), pblock->nNonce, hashTarget.GetHex());
                     assert(hash.GetHex()==pblock->GetHash().GetHex());
                     LogPrintf("Hashes Per Second=%d (total seconds=%d hashes=%d)\n", dHashesPerSec, time(NULL) - startTime, totalHashes);
@@ -616,7 +616,7 @@ void static BitcoinMiner(CWallet *pwallet, uint32_t minerI, uint32_t minerN, int
                     if (UintToArith256(hash) <= hashTarget) {
                         assert(hash == pblock->GetHash());
                         SetThreadPriority(THREAD_PRIORITY_NORMAL);
-                        LogPrintf("SUQAMiner:\n");
+                        LogPrintf("L33TMiner:\n");
                         LogPrintf("proof-of-work found  \n  hash: %s  \ntarget: %s\n", hash.GetHex(), hashTarget.GetHex());
                         ProcessBlockFound(pblock, *pwallet, reservekey);
                         SetThreadPriority(THREAD_PRIORITY_LOWEST);
@@ -651,14 +651,14 @@ void static BitcoinMiner(CWallet *pwallet, uint32_t minerI, uint32_t minerN, int
     }
     catch (const boost::thread_interrupted&)
     {
-        LogPrintf("SUQAMiner terminated\n");
+        LogPrintf("L33TMiner terminated\n");
         //aligned_free(scratchpad);
         fGenerate = false;
         return;
     }
     catch (const std::runtime_error &e)
     {
-        LogPrintf("SUQAMiner runtime error: %s\n", e.what());
+        LogPrintf("L33TMiner runtime error: %s\n", e.what());
         //aligned_free(scratchpad);
         fGenerate = false;
         return;

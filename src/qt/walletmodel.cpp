@@ -265,13 +265,13 @@ WalletModel::SendCoinsReturn WalletModel::prepareTransaction(WalletModelTransact
                 }
                 ss <<"Term Deposit Instruction Detected: " << std::fixed;
                 ss.precision(8);
-                ss <<"This will send the amount of " << (0.0+rcp.amount)/COIN <<" SUQA ";
+                ss <<"This will send the amount of " << (0.0+rcp.amount)/COIN <<" L33T ";
                 ss <<"to be locked for " << termDepositLength << " blocks. ";
                 ss.precision(2);
                 ss <<"This is approximately " << (0.0+termDepositLength)/(720) << " days. ";
                 CAmount withInterest=GetInterest(rcp.amount, chainActive.Height()+1, chainActive.Height()+1+termDepositLength, chainActive.Height()+1+termDepositLength);
                 ss.precision(8);
-                ss <<"Upon maturation, it will be worth " << (0.0+withInterest)/COIN << " SUQA. ";
+                ss <<"Upon maturation, it will be worth " << (0.0+withInterest)/COIN << " L33T. ";
                 CAmount interestOnly=withInterest-rcp.amount;
                 double interestRateForTime=(0.0+interestOnly)/(rcp.amount);
                 double fractionOfaYear=720*365/termDepositLength;
@@ -364,7 +364,7 @@ WalletModel::SendCoinsReturn WalletModel::sendCoins(WalletModelTransaction &tran
                 rcp.paymentRequest.SerializeToString(&value);
                 newTx->vOrderForm.push_back(make_pair(key, value));
             }
-            else if (!rcp.message.isEmpty()) // Message from normal suqa:URI (suqa:123...?message=example)
+            else if (!rcp.message.isEmpty()) // Message from normal L33T:URI (L33T:123...?message=example)
                 newTx->vOrderForm.push_back(make_pair("Message", rcp.message.toStdString()));
         }
 

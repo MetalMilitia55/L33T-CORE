@@ -18,14 +18,14 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "SUQA"
-            VALUE "FileDescription",    "SUQA Core (GUI node for SUQA)"
+            VALUE "CompanyName",        "L33T"
+            VALUE "FileDescription",    "L33T Core (GUI node for L33T)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
-            VALUE "InternalName",       "SUQA-qt"
+            VALUE "InternalName",       "L33T-qt"
             VALUE "LegalCopyright",     COPYRIGHT_STR
             VALUE "LegalTrademarks1",   "Distributed under the MIT software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
-            VALUE "OriginalFilename",   "SUQA-qt.exe"
-            VALUE "ProductName",        "SUQA Core"
+            VALUE "OriginalFilename",   "L33T-qt.exe"
+            VALUE "ProductName",        "L33T Core"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END
     END

@@ -408,7 +408,7 @@ boost::filesystem::path GetDefaultDataDir()
     // Unix: ~/.bitcoin
 #ifdef WIN32
     // Windows
-    return GetSpecialFolderPath(CSIDL_APPDATA) / "SUQA";
+    return GetSpecialFolderPath(CSIDL_APPDATA) / "L33T";
 #else
     fs::path pathRet;
     char* pszHome = getenv("HOME");
@@ -420,10 +420,10 @@ boost::filesystem::path GetDefaultDataDir()
     // Mac
     pathRet /= "Library/Application Support";
     TryCreateDirectory(pathRet);
-    return pathRet / "SUQA";
+    return pathRet / "L33T";
 #else
     // Unix
-    return pathRet / ".SUQA";
+    return pathRet / ".L33T";
 #endif
 #endif
 }
@@ -470,7 +470,7 @@ void ClearDatadirCache()
 
 boost::filesystem::path GetConfigFile()
 {
-    boost::filesystem::path pathConfigFile(GetArg("-conf", "SUQA.conf"));
+    boost::filesystem::path pathConfigFile(GetArg("-conf", "L33T.conf"));
     if (!pathConfigFile.is_complete())
         pathConfigFile = GetDataDir(false) / pathConfigFile;
 
@@ -482,14 +482,14 @@ void ReadConfigFile(map<string, string>& mapSettingsRet,
 {
     boost::filesystem::ifstream streamConfig(GetConfigFile());
     if (!streamConfig.good())
-        return; // No SUQA.conf file is OK
+        return; // No L33T.conf file is OK
 
     set<string> setOptions;
     setOptions.insert("*");
 
     for (boost::program_options::detail::config_file_iterator it(streamConfig, setOptions), end; it != end; ++it)
     {
-        // Don't overwrite existing settings so command line settings override SUQA.conf
+        // Don't overwrite existing settings so command line settings override L33T.conf
         string strKey = string("-") + it->string_key;
         if (mapSettingsRet.count(strKey) == 0)
         {
@@ -506,7 +506,7 @@ void ReadConfigFile(map<string, string>& mapSettingsRet,
 #ifndef WIN32
 boost::filesystem::path GetPidFile()
 {
-    boost::filesystem::path pathPidFile(GetArg("-pid", "SUQA.pid"));
+    boost::filesystem::path pathPidFile(GetArg("-pid", "L33T.pid"));
     if (!pathPidFile.is_complete()) pathPidFile = GetDataDir() / pathPidFile;
     return pathPidFile;
 }

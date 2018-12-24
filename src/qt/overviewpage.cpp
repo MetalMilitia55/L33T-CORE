@@ -27,7 +27,7 @@ class TxViewDelegate : public QAbstractItemDelegate
 {
     Q_OBJECT
 public:
-    TxViewDelegate(): QAbstractItemDelegate(), unit(BitcoinUnits::SUQA)
+    TxViewDelegate(): QAbstractItemDelegate(), unit(BitcoinUnits::L33T)
     {
 
     }
@@ -187,7 +187,7 @@ void OverviewPage::setBalance(const CAmount& balance, const CAmount& unconfirmed
     ui->hodlTable->setRowCount(termDepositInfo.size());
 
     // actually update labels
-    int nDisplayUnit = BitcoinUnits::SUQA;
+    int nDisplayUnit = BitcoinUnits::L33T;
     // Disable sorting outside the for loop
     ui->hodlTable->setSortingEnabled(false);
 
@@ -306,7 +306,7 @@ void OverviewPage::setWalletModel(WalletModel *model)
         connect(model, SIGNAL(notifyWatchonlyChanged(bool)), this, SLOT(updateWatchOnlyLabels(bool)));
     }
 
-    // update the display unit, to not use the default ("SUQA")
+    // update the display unit, to not use the default ("L33T")
     updateDisplayUnit();
 }
 

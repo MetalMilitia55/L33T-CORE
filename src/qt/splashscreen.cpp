@@ -38,18 +38,18 @@ SplashScreen::SplashScreen(Qt::WindowFlags f, const NetworkStyle *networkStyle) 
 #endif
 
     // define text to place
-    QString titleText       = tr("SUQA Core");
+    QString titleText       = tr("L33T Core");
     QString versionText     = QString("Version %1").arg(QString::fromStdString(FormatFullVersion()));
     QString copyrightText   = QChar(0xA9)+QString("2009-%1 ").arg(COPYRIGHT_YEAR) + QString(tr("The Bitcoin developers"));
-    QString copyrightText2  = QChar(0xA9)+QString("2017 ").arg(COPYRIGHT_YEAR) + QString(tr("The HOdl-coin and SUQA developers"));
+    QString copyrightText2  = QChar(0xA9)+QString("2017 ").arg(COPYRIGHT_YEAR) + QString(tr("The HOdl-coin and L33T developers"));
 
     const char *inspirationals[] = {
-        "Do you even SUQA?",
+        "Do you even L33T?",
         "The squirrel is the animal kingdom's natural HOdler.",
-        "The nut is the smallest unit of SUQA.",
-        "There are 100,000,000 nuts in one SUQA.",
+        "The nut is the smallest unit of L33T.",
+        "There are 100,000,000 nuts in one L33T.",
         "Help! I'm being HOdled against my will.",
-        "Plan for profit. Step 1:SUQA, Step 2:SUQA, Step 3:SUQA",
+        "Plan for profit. Step 1:L33T, Step 2:L33T, Step 3:L33T",
         "HOdl your horses.",
         "Let us Hodl each other.",
         "What would Jesus HOdl?",
@@ -58,7 +58,7 @@ SplashScreen::SplashScreen(Qt::WindowFlags f, const NetworkStyle *networkStyle) 
         "Ask not for a lighter burden, but for broader sHOdlers.",
         "Keep Calm and HOdl On.",
         "Welcome to HOdl California.",
-        "SUQA - rating:SUQA"
+        "L33T - rating:L33T"
     };
 
     srand(time(NULL)+clock());

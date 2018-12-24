@@ -17,9 +17,9 @@ BitcoinUnits::BitcoinUnits(QObject *parent):
 QList<BitcoinUnits::Unit> BitcoinUnits::availableUnits()
 {
     QList<BitcoinUnits::Unit> unitlist;
-    unitlist.append(SUQA);
-    unitlist.append(mSUQA);
-    unitlist.append(uSUQA);
+    unitlist.append(L33T);
+    unitlist.append(mL33T);
+    unitlist.append(uL33T);
     return unitlist;
 }
 
@@ -27,9 +27,9 @@ bool BitcoinUnits::valid(int unit)
 {
     switch(unit)
     {
-    case SUQA:
-    case mSUQA:
-    case uSUQA:
+    case L33T:
+    case mL33T:
+    case uL33T:
         return true;
     default:
         return false;
@@ -40,9 +40,9 @@ QString BitcoinUnits::name(int unit)
 {
     switch(unit)
     {
-    case SUQA: return QString("SUQA");
-    case mSUQA: return QString("mSUQA");
-    case uSUQA: return QString::fromUtf8("μSUQA");
+    case L33T: return QString("L33T");
+    case mL33T: return QString("mL33T");
+    case uL33T: return QString::fromUtf8("μL33T");
     default: return QString("???");
     }
 }
@@ -51,9 +51,9 @@ QString BitcoinUnits::description(int unit)
 {
     switch(unit)
     {
-    case SUQA: return QString("SUQAs");
-    case mSUQA: return QString("Milli-SUQAs (1 / 1" THIN_SP_UTF8 "000)");
-    case uSUQA: return QString("Micro-SUQAs (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+    case L33T: return QString("L33Ts");
+    case mL33T: return QString("Milli-L33Ts (1 / 1" THIN_SP_UTF8 "000)");
+    case uL33T: return QString("Micro-L33Ts (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
     default: return QString("???");
     }
 }
@@ -62,9 +62,9 @@ qint64 BitcoinUnits::factor(int unit)
 {
     switch(unit)
     {
-    case SUQA:  return 100000000;
-    case mSUQA: return 100000;
-    case uSUQA: return 100;
+    case L33T:  return 100000000;
+    case mL33T: return 100000;
+    case uL33T: return 100;
     default:   return 100000000;
     }
 }
@@ -73,9 +73,9 @@ int BitcoinUnits::decimals(int unit)
 {
     switch(unit)
     {
-    case SUQA: return 8;
-    case mSUQA: return 5;
-    case uSUQA: return 2;
+    case L33T: return 8;
+    case mL33T: return 5;
+    case uL33T: return 2;
     default: return 0;
     }
 }

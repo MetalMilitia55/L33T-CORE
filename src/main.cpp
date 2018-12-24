@@ -38,7 +38,7 @@
 using namespace std;
 
 #if defined(NDEBUG)
-# error "SUQA cannot be compiled without assertions."
+# error "L33T cannot be compiled without assertions."
 #endif
 
 /**

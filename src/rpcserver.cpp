@@ -254,10 +254,10 @@ Value stop(const Array& params, bool fHelp)
     if (fHelp || params.size() > 1)
         throw runtime_error(
             "stop\n"
-            "\nStop SUQA server.");
+            "\nStop L33T server.");
     // Shutdown will take long enough that the response should get back
     StartShutdown();
-    return "SUQA server stopping";
+    return "L33T server stopping";
 }
 
 
@@ -606,7 +606,7 @@ void StartRPCThreads()
         unsigned char rand_pwd[32];
         GetRandBytes(rand_pwd, 32);
         uiInterface.ThreadSafeMessageBox(strprintf(
-            _("To use bitcoind, or the -server option to SUQA-qt, you must set an rpcpassword in the configuration file:\n"
+            _("To use bitcoind, or the -server option to L33T-qt, you must set an rpcpassword in the configuration file:\n"
               "%s\n"
               "It is recommended you use the following random password:\n"
               "rpcuser=bitcoinrpc\n"
@@ -615,7 +615,7 @@ void StartRPCThreads()
               "The username and password MUST NOT be the same.\n"
               "If the file does not exist, create it with owner-readable-only file permissions.\n"
               "It is also recommended to set alertnotify so you are notified of problems;\n"
-              "for example: alertnotify=echo %%s | mail -s \"SUQA Alert\" admin@foo.com\n"),
+              "for example: alertnotify=echo %%s | mail -s \"L33T Alert\" admin@foo.com\n"),
                 GetConfigFile().string(),
                 EncodeBase58(&rand_pwd[0],&rand_pwd[0]+32)),
                 "", CClientUIInterface::MSG_ERROR | CClientUIInterface::SECURE);

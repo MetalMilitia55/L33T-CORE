@@ -413,7 +413,7 @@ Value gettermdepositstats(const Array& params, bool fHelp)
             "[\n"
 			"  \"nAddress\"  (Number) number of address\n"
             "  \"nTimeLockedTxs\"  (Number) the total number of TimeLocked Tx\n"
-            "  \"nTotalTimeLockedValue\"  (number) the total SUQA locked on all wallets\n"
+            "  \"nTotalTimeLockedValue\"  (number) the total L33T locked on all wallets\n"
             "]\n"
             "\nExamples:\n"
             + HelpExampleCli("gettermdepositstats", "")

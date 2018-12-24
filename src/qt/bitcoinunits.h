@@ -56,9 +56,9 @@ public:
      */
     enum Unit
     {
-        SUQA,
-        mSUQA,
-        uSUQA
+        L33T,
+        mL33T,
+        uL33T
     };
 
     enum SeparatorStyle

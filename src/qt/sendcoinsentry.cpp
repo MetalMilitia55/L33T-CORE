@@ -119,7 +119,7 @@ void SendCoinsEntry::clear()
     }else{
         ui->payToLabel->setText("Deposit Address:");
     }
-    // update the display unit, to not use the default ("SUQA")
+    // update the display unit, to not use the default ("L33T")
     updateDisplayUnit();
 
 }

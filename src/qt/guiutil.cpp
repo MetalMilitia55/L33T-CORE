@@ -107,7 +107,7 @@ void setupAddressWidget(QValidatedLineEdit *widget, QWidget *parent)
 #if QT_VERSION >= 0x040700
     // We don't want translators to use own addresses in translations
     // and this is the only place, where this address is supplied.
-    widget->setPlaceholderText(QObject::tr("Enter a SUQA address (e.g. %1)").arg("HMtDP17aq8X35d6gXy7RDQLuGVSdwtqHrq"));
+    widget->setPlaceholderText(QObject::tr("Enter a L33T address (e.g. %1)").arg("HMtDP17aq8X35d6gXy7RDQLuGVSdwtqHrq"));
 #endif
     widget->setValidator(new BitcoinAddressEntryValidator(parent));
     widget->setCheckValidator(new BitcoinAddressCheckValidator(parent));
@@ -124,8 +124,8 @@ void setupAmountWidget(QLineEdit *widget, QWidget *parent)
 
 bool parseBitcoinURI(const QUrl &uri, SendCoinsRecipient *out)
 {
-    // return if URI is not valid or is no suqa: URI
-    if(!uri.isValid() || uri.scheme() != QString("suqa"))
+    // return if URI is not valid or is no l33t: URI
+    if(!uri.isValid() || uri.scheme() != QString("l33t"))
         return false;
 
     SendCoinsRecipient rv;
@@ -165,7 +165,7 @@ bool parseBitcoinURI(const QUrl &uri, SendCoinsRecipient *out)
         {
             if(!i->second.isEmpty())
             {
-                if(!BitcoinUnits::parse(BitcoinUnits::SUQA, i->second, &rv.amount))
+                if (!BitcoinUnits::parse(BitcoinUnits::L33T, i->second, &rv.amount))
                 {
                     return false;
                 }
@@ -185,13 +185,13 @@ bool parseBitcoinURI(const QUrl &uri, SendCoinsRecipient *out)
 
 bool parseBitcoinURI(QString uri, SendCoinsRecipient *out)
 {
-    // Convert suqa:// to suqa:
+    // Convert l33t:// to l33t:
     //
-    //    Cannot handle this later, because suqa:// will cause Qt to see the part after // as host,
+    //    Cannot handle this later, because l33t:// will cause Qt to see the part after // as host,
     //    which will lower-case it (and thus invalidate the address).
-    if(uri.startsWith("suqa://", Qt::CaseInsensitive))
+    if(uri.startsWith("l33t://", Qt::CaseInsensitive))
     {
-        uri.replace(0, 10, "suqa:");
+        uri.replace(0, 10, "l33t:");
     }
     QUrl uriInstance(uri);
     return parseBitcoinURI(uriInstance, out);
@@ -199,12 +199,12 @@ bool parseBitcoinURI(QString uri, SendCoinsRecipient *out)
 
 QString formatBitcoinURI(const SendCoinsRecipient &info)
 {
-    QString ret = QString("suqa:%1").arg(info.address);
+    QString ret = QString("l33t:%1").arg(info.address);
     int paramCount = 0;
 
     if (info.amount)
     {
-        ret += QString("?amount=%1").arg(BitcoinUnits::format(BitcoinUnits::SUQA, info.amount, false, BitcoinUnits::separatorNever));
+        ret += QString("?amount=%1").arg(BitcoinUnits::format(BitcoinUnits::L33T, info.amount, false, BitcoinUnits::separatorNever));
         paramCount++;
     }
 
@@ -569,11 +569,11 @@ TableViewLastColumnResizingFixer::TableViewLastColumnResizingFixer(QTableView* t
 boost::filesystem::path static StartupShortcutPath()
 {
     if (GetBoolArg("-testnet", false))
-        return GetSpecialFolderPath(CSIDL_STARTUP) / "SUQA (testnet).lnk";
+        return GetSpecialFolderPath(CSIDL_STARTUP) / "L33T (testnet).lnk";
     else if (GetBoolArg("-regtest", false))
-        return GetSpecialFolderPath(CSIDL_STARTUP) / "SUQA (regtest).lnk";
+        return GetSpecialFolderPath(CSIDL_STARTUP) / "L33T (regtest).lnk";
 
-    return GetSpecialFolderPath(CSIDL_STARTUP) / "SUQA.lnk";
+    return GetSpecialFolderPath(CSIDL_STARTUP) / "L33T.lnk";
 }
 
 bool GetStartOnSystemStartup()
@@ -710,11 +710,11 @@ bool SetStartOnSystemStartup(bool fAutoStart)
         optionFile << "[Desktop Entry]\n";
         optionFile << "Type=Application\n";
         if (GetBoolArg("-testnet", false))
-            optionFile << "Name=SUQA (testnet)\n";
+            optionFile << "Name=L33T (testnet)\n";
         else if (GetBoolArg("-regtest", false))
-            optionFile << "Name=SUQA (regtest)\n";
+            optionFile << "Name=L33T (regtest)\n";
         else
-            optionFile << "Name=SUQA\n";
+            optionFile << "Name=L33T\n";
         optionFile << "Exec=" << pszExePath << strprintf(" -min -testnet=%d -regtest=%d\n", GetBoolArg("-testnet", false), GetBoolArg("-regtest", false));
         optionFile << "Terminal=false\n";
         optionFile << "Hidden=false\n";
