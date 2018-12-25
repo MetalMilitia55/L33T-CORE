@@ -1,4 +1,4 @@
-L33T is a new opensource peer to peer Gaming Coin that gives the investors 5% apr interest from term deposits even if the wallet is offline. It is based on an improved code of the secure and widely used Bitcoin Blockchain with a brand new advanced memory intensive X22i POW algo which is completely ASIC, FPGA and Quantum Resistant.
+﻿L33T is a new opensource peer to peer Gaming Coin that gives the investors 5% apr interest from term deposits even if the wallet is offline. It is based on an improved code of the secure and widely used Bitcoin Blockchain with a brand new advanced memory intensive X22i POW algo which is completely ASIC, FPGA and Quantum Resistant.
 
 Meaning of "L33T"
 The term L33T In gaming a term to describe one with a great deal of skill, or to describe incredibly advanced technology. One who is l33t is the opposite of being a noob. L33tness is relative but usually comes with experience and skill (or upgraded hardware for better gaming speed and performance).
@@ -16,10 +16,10 @@ Following are some of the problems which L33T Coin addresses:
 L33T Features:
 
 1. Fast:
-Fastest POW Coin: 533 Transactions per second. 75 times more scalable than Bitcoin.
+533 Transactions per second. 75 times more scalable than Bitcoin.
 
 2. Rewarding:
-Investors can earn 5% apr interest from term deposits even if the wallet is offline. First 3 months monthly term deposit apr will be 25% apr to encourage early adopters and investors.  
+Investors and Gamers can earn 5% apr interest from term deposits even if the wallet is offline. First 3 months monthly term deposit apr will be 25% apr to encourage early adopters and investors. 
 
 3. Almost No Transaction Fees
 L33T allows you to make instant payments with incredibly low fees for each transaction. Using blockchain technology, transactions are performed directly between two digital wallets.
@@ -68,7 +68,7 @@ Block rewards
 TOTAL SUPPLY: 88,000,000  plus 9.09%
 for founders fee will be mined in 5.78 years.
 
-MAX TOTAL : 88,000,000 L33T
+MAX TOTAL : 1,186,614,344 L33T
 
 Technical Details:
 
@@ -88,12 +88,10 @@ Click on EARN. Click on YES and YES. You should see on  the amount you put on ho
 Documentation
 
 
-GitHub
-EAMPLE     (https://github.com/SUQAORG-----------------------------------chagne once finished)
+GitHub---     https://github.com/MetalMilitia55/L33T-CORE
 
 Wallets
-Windows-Qt 
-EXAMPLE    (https://github.com/SUQAORG/SUQA-CORE/releases/tag/v1.0-------chagne once finished)
+Windows-Qt Example    (https://github.com/SUQAORG/SUQA-CORE/releases/tag/v1.0-------change once finished)
 
 Linux
 EAMPLE:    (https://github.com/SUQAORG/SUQA-CORE/releases/tag/v1.0_------change once finished)
